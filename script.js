@@ -169,3 +169,69 @@ const usuarios = [
 let estadoActual = usuarios[0].pedidos[1].productos[0].estado = "entregado"
 
 console.log(estadoActual)
+
+
+// EJERCICIO NUEVO, RESPONDELO AQUI MISMO
+
+const ListaUsuarios = [
+    { 
+        id: 1, 
+        nombre: "Lucas", 
+        edad: 21, 
+        direccion: { ciudad: "Lima", pais: "Perú" }, 
+        pedidos: [
+            { 
+                idPedido: 101, 
+                fecha: "2025-02-10", 
+                productos: [
+                    { 
+                        nombre: "Laptop", 
+                        precio: 1200, 
+                        estado: "pendiente", 
+                        proveedor: { nombre: "TechPro", ubicacion: { ciudad: "Miami", pais: "EEUU" } }
+                    },
+                    { 
+                        nombre: "Mouse", 
+                        precio: 50, 
+                        estado: "entregado", 
+                        proveedor: { nombre: "GamerTech", ubicacion: { ciudad: "Londres", pais: "Reino Unido" } }
+                    }
+                ] 
+            }
+        ]
+    },
+    { 
+        id: 2, 
+        nombre: "María", 
+        edad: 25, 
+        direccion: { ciudad: "Madrid", pais: "España" }, 
+        pedidos: [
+            { 
+                idPedido: 102, 
+                fecha: "2025-02-12", 
+                productos: [
+                    { 
+                        nombre: "Monitor", 
+                        precio: 300, 
+                        estado: "pendiente", 
+                        proveedor: { nombre: "VisionTech", ubicacion: { ciudad: "Tokio", pais: "Japón" } }
+                    }
+                ] 
+            },
+            { 
+                idPedido: 103, 
+                fecha: "2025-02-14", 
+                productos: [
+                    { 
+                        nombre: "Teclado mecánico", 
+                        precio: 150, 
+                        estado: "pendiente", 
+                        proveedor: { nombre: "KeyMaster", ubicacion: { ciudad: "Berlín", pais: "Alemania" } }
+                    }
+                ] 
+            }
+        ]
+    }
+];
+
+// Cómo cambiar la ciudad del proveedor "VisionTech" en el pedido con idPedido: 102 del usuario con id: 2 a "Seúl"?
