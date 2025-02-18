@@ -235,7 +235,6 @@ const ListaUsuarios = [
 ];
 
 // Cómo cambiar la ciudad del proveedor "VisionTech" en el pedido con idPedido: 102 del usuario con id: 2 a "Seúl"?
+let ciudadActual = ListaUsuarios[1].pedidos[0].productos[0].proveedor.ubicacion.ciudad = "Seúl"
 
-let Ciudad = ListaUsuarios[1].pedidos[0].productos[0].proveedor.ubicacion.ciudad = "Seúl"
-
-console.log(Ciudad)
+console.log(ciudadActual)
