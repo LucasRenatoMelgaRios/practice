@@ -238,3 +238,4 @@ const ListaUsuarios = [
 let ciudadActual = ListaUsuarios[1].pedidos[0].productos[0].proveedor.ubicacion.ciudad = "Seúl"
 
 console.log(ciudadActual)
+
